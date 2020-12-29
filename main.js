@@ -7,15 +7,12 @@ const { token, prefix } = require('./config.json');
 
 client.once('ready', () => {
     console.log('Ready!');
-    if(client.guilds.cache.size == 1){
-        client.user.setActivity(`Minecraft Skin Grabber is now Minecraft Bot: <announcement link coming soon> | ${prefix}help`, { type: 'LISTENING' });
-        return;
-    }
-    client.user.setActivity(`Minecraft Skin Grabber is now Minecraft Bot: <announcement link coming soon> | ${prefix}help`, { type: 'LISTENING' });
+    client.user.setActivity(`Minecraft Skin Grabber is now Minecraft Bot! (mcb!newname) | ${prefix}help`, { type: 'PLAYING' });
 
     new WOKCommands(client, 'commands', 'features')
     .setDefaultPrefix(prefix)
     .setCategoryEmoji('Minecraft Skins', '🙋‍♂️')
+    .setCategoryEmoji('Utilities', '🔧')
 });
 
 client.login(token);

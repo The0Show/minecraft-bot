@@ -7,7 +7,7 @@ async function workworkwork(message, args, text, client, prefix, instance){
 module.exports = {
     name: 'ping',
     description: 'Test the bot\'s latency.',
-    category: 'Utilites',
+    category: 'Utilities',
     cooldown: '3s',
     aliases: ['p', 'pong', 'test'],
     minArgs: 0,
