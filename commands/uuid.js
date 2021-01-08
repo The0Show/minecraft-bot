@@ -15,7 +15,7 @@ async function workworkwork(message, args, text, client, prefix, instance){
 
 module.exports = {
     name: 'uuid',
-    description: 'Get aMinecraft user\'s UUID.',
+    description: 'Get a Minecraft user\'s UUID.',
     category: 'Minecraft API',
     cooldown: '3s',
     aliases: ['getuuid'],

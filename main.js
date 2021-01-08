@@ -13,6 +13,8 @@ client.once('ready', () => {
     .setDefaultPrefix(prefix)
     .setCategoryEmoji('Minecraft Skins', '🙋‍♂️')
     .setCategoryEmoji('Utilities', '🔧')
+    .setCategoryEmoji('Minecraft Servers', '🌐')
+    .setCategoryEmoji('Minecraft API', '🟩')
 });
 
 client.login(token);
