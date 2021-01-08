@@ -3,7 +3,7 @@ const WOKCommands = require('wokcommands');
 const fetch = require('node-fetch');
 const client = new Discord.Client();
 
-const { token, prefix } = require('./settings.json');
+const { token, prefix } = require('./botsettings.json');
 
 client.once('ready', () => {
     console.log('Ready!');
