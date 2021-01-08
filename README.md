@@ -3,6 +3,16 @@ Get Minecraft skins, UUIDs, 2b2t info, and more from Discord!
 
 [![Discord Bots](https://top.gg/api/widget/739577411716513832.svg)](https://top.gg/bot/739577411716513832)
 
+## Development Setup
+### Step 1
+Clone the source code.
+
+### Step 2
+Go into the directory and run `npm i`.
+
+### Step 3
+Start the bot by running `main.js` (`node .`). If you want to make new commands, check out the [WOKCommands package](https://www.npmjs.com/package/wokcommands) for instructions.
+
 ## Commands
 
 ### Minecraft Skins
