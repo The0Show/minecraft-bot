@@ -16,16 +16,10 @@ Start the bot by running `main.js` (`node .`). If you want to make new commands,
 ## Commands
 
 ### Minecraft Skins
-**mcb!body** - Grab a Minecraft user's body.
-**mcb!skin** - Grab a Minecraft user's skin.
-**mcb!bust** - Grab a Minecraft user's body in profile picture form.
-**mcb!cube** - Grab a Minecraft user's head in cube form.
-**mcb!head** - Grab a Minecraft user's head.
+**mcb!body** - Grab a Minecraft user's body.<br>**mcb!skin** - Grab a Minecraft user's skin.<br>**mcb!bust** - Grab a Minecraft user's body in profile picture form.<br>**mcb!cube** - Grab a Minecraft user's head in cube form.<br>**mcb!head** - Grab a Minecraft user's head.
 
 ### Utilities
-**mcb!newname** - Read about my new name!
-**mcb!ping** - Test the bot's latency.
-**mcb!status** - Get the status for Minecraft, Minotar, and ~~Hypixel~~ (Hypixel coming soon).
+**mcb!newname** - Read about my new name!<br>**mcb!ping** - Test the bot's latency.<br>**mcb!status** - Get the status for Minecraft, Minotar, and ~~Hypixel~~ (Hypixel coming soon).
 
 ### 2b2t Commands
 **mcb!2b2t** - Get 2b2t info.
