@@ -8,7 +8,7 @@ module.exports = {
     maxArgs: 0,
     callback: async (message, args, text, client, prefix, instance) => {
         const m = await message.channel.send('Ping...')
-        const delay = m.createdTimestamp - message.createdTimestamp
-        m.edit('Pong!\n```\nLatency: ' + delay + 'ms\nAPI Latency: ' + Math.round(client.ws.ping) + 'ms\n```')
+        const delay = m.createdTimestamp - message.message.createdTimestamp
+        m.edit('Pong!\n```\nLatency: ' + delay + 'ms\nAPI Latency: ' + Math.round(message.client.ws.ping) + 'ms\n```')
     }
 }

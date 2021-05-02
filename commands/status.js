@@ -14,7 +14,7 @@ module.exports = {
         message.channel.startTyping(100)
         fetch("https://status.mojang.com/check")
         .then(res => res.json())
-        .then(res => {
+        .then(async res => {
             const embed = new Discord.MessageEmbed()
             .setTitle("Minecraft Bot Status")
             res.forEach(obj => {
@@ -27,7 +27,7 @@ module.exports = {
             if(hypixel.alive) embed.addField("api.hypixel.net", ":green_circle:")
             else if(!hypixel.alive) embed.addField("api.hypixel.net", ":red_circle:")
             .setFooter('By The0Show#8908 // Color Implementation by Skrt#1337', 'https://cdn.discordapp.com/avatars/468093150217371649/958fb70d7627631e7dc5ec39a4fca68e.jpg?size=2048')
-            msg.channel.send(embed)
+            message.channel.send(embed)
             message.channel.stopTyping(true)
         })
     }

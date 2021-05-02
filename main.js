@@ -1,12 +1,18 @@
 const Discord = require('discord.js');
+const { MessageEmbed } = Discord
 const WOKCommands = require('wokcommands');
 const fetch = require('node-fetch');
-const client = new Discord.Client();
+const client = new Discord.Client({
+    partials: ["MESSAGE", "REACTION"]
+});
 require('dotenv').config()
+const ping = require('ping')
+
+const prefix = 'mcb!'
 
 client.once('ready', () => {
     console.log('Ready!');
-    client.user.setActivity(`Minecraft Skin Grabber is now Minecraft Bot! (mcb!newname) | mcb!help`, { type: 'PLAYING' });
+    client.user.setActivity(`${client.guilds.cache.size} servers`, { type: 'WATCHING' });
 
     new WOKCommands(client, 'commands', 'features')
     .setDefaultPrefix('mcb!')
