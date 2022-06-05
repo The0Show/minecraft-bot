@@ -11,6 +11,12 @@ Clone the source code.
 Go into the directory and run `npm i`.
 
 ### Step 3
+Create a file named `.env` with the following contents:
+```
+DISCORD_TOKEN=<your bot token goes here>
+```
+
+### Step 4
 Start the bot by running `main.js` (`node .`). If you want to make new commands, check out the [WOKCommands package](https://www.npmjs.com/package/wokcommands) for instructions.
 
 ## Commands
